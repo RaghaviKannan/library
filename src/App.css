@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+
+h1{
+  color: brown;
+}
+.navbar{
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  list-style: none;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar li {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 15px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(70, 11, 11, 0.6);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  height: 20vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(27, 47, 69, 0.7);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+table{
+  text-align: center;
+  margin-top: 30px;
+}
+
+label{
+  font-size: larger;
+  font-weight: bolder;
+  margin: 18px;
+  color: rgb(52, 72, 145);
+}
+
+.error-box{
+  border: 2px solid red;
+}
+
+.success-box{
+  border: 2px solid green;
+}
+
+p{
+  margin-left: 18px;
+  font-style: italic;
+  font-weight: bolder;
+  color: orangered;
 }
